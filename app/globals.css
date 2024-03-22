@@ -2,32 +2,65 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+@layer base {
+  body {
+    /* body M */
+    /* font-size: 1.375rem; */
+    @apply font-body text-grey font-light /*leading-8*/;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-heading text-black font-black;
+  }
+
+  h1 {
+    /* headign XL */
+    /* @apply text-8xl leading-88; */
+  }
+
+  h2 {
+    /* heading L */
+    /* font-size: 4.375rem;
+    @apply leading-70; */
+  }
+
+  h3 {
+    /* heading M */
+    /* @apply text-6xl leading-50; */
+  }
+
+  h4 {
+    /* heading S */
+    /* @apply text-4xl leading-9; */
+  }
+
+  small {
+    /* body S */
+    /* @apply text-black text-lg font-light; */
+  }
+
+  button {
+    @apply bg-black text-white font-heading font-extrabold text-xl leading-none text-center py-6 px-8;
+    letter-spacing: 0.2275em;
+  }
+
+  button:hover {
+    @apply bg-gold;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .full-width {
+    left: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    max-width: 100vw;
+    position: relative;
+    right: 50%;
+    width: 100vw;
+    overflow: hidden;
   }
 }
