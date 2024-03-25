@@ -42,11 +42,6 @@
     /* @apply text-black text-lg font-light; */
   }
 
-  button {
-    @apply bg-black text-white font-heading font-extrabold text-xl leading-none text-center py-6 px-8;
-    letter-spacing: 0.2275em;
-  }
-
   button:hover {
     @apply bg-gold;
   }

@@ -1,9 +1,10 @@
 import Image from 'next/image';
 import Logo from './Logo';
+import Button from './Button';
 
 export default function Header() {
   return (
-    <header>
+    <header className='space-y-8'>
       <Image
         src='/image-hero.jpg'
         alt='Image of people looking at art'
@@ -17,6 +18,7 @@ export default function Header() {
         spark of inspiration. Will these pieces inspire you? Visit us and find
         out.
       </p>
+      <Button />
     </header>
   );
 }
