@@ -13,7 +13,7 @@ export default function Header() {
         className='max-md:full-width max-md:h-60 max-md:object-cover'
       />
       <Logo />
-      <p className='text-lg lg:text-[1.375rem] lg:leading-8'>
+      <p>
         The arts in the collection of the Modern Art Gallery all started from a
         spark of inspiration. Will these pieces inspire you? Visit us and find
         out.
