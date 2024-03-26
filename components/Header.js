@@ -4,7 +4,7 @@ import Button from './Button';
 
 export default function Header() {
   return (
-    <header className='space-y-8'>
+    <header className='container mx-auto px-4 lg:px-[10.25rem] space-y-8'>
       <Image
         src='/image-hero.jpg'
         alt='Image of people looking at art'

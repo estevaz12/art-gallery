@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function Home() {
   return (
-    <main className='my-[7.5rem] lg:my-[11.25rem] space-y-8'>
+    <main className='container mx-auto px-4 lg:px-[10.25rem] my-[7.5rem] lg:my-[11.25rem] space-y-8'>
       <section className='space-y-6'>
         <Image
           src='/image-grid-1.jpg'
