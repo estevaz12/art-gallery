@@ -6,7 +6,7 @@ import Image from 'next/image';
  */
 export default function Home() {
   return (
-    <main className='max-lg:max-w-md max-lg:mx-auto px-4 lg:px-10 xl:px-[10.25rem] my-[7.5rem] lg:my-[11.25rem] grid gap-8 lg:gap-[1.875rem]'>
+    <main className='max-w-md lg:max-w-[1440px] mx-auto px-4 lg:px-10 xl:px-[10.25rem] my-[7.5rem] lg:my-[11.25rem] grid gap-8 lg:gap-[1.875rem]'>
       {/* First part of image grid */}
       <section className='max-lg:space-y-6 lg:flex lg:gap-[1.875rem]'>
         <Image
