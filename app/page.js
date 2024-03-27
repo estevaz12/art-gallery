@@ -1,8 +1,13 @@
 import Image from 'next/image';
 
+/**
+ * The homepage of the website
+ * @returns {JSX.Element} The homepage component
+ */
 export default function Home() {
   return (
     <main className='max-lg:max-w-md max-lg:mx-auto px-4 lg:px-10 xl:px-[10.25rem] my-[7.5rem] lg:my-[11.25rem] grid gap-8 lg:gap-[1.875rem]'>
+      {/* First part of image grid */}
       <section className='max-lg:space-y-6 lg:flex lg:gap-[1.875rem]'>
         <Image
           src='/image-grid-1.jpg'
@@ -22,6 +27,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Second part of image grid (2 images + text) */}
       <section className='grid gap-4 lg:gap-[1.875rem] lg:grid-cols-[auto_1fr] lg:grid-rows-[auto_1fr]'>
         <Image
           src='/image-grid-2.jpg'
