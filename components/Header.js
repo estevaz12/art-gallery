@@ -3,7 +3,7 @@ import Button from './Button';
 
 export default function Header() {
   return (
-    <header className='max-lg:px-4 max-lg:space-y-8 lg:relative'>
+    <header className='max-lg:max-w-md max-lg:mx-auto max-lg:px-4 max-lg:space-y-8 lg:relative'>
       <Image
         src='/image-hero.jpg'
         alt='Image of people looking at art'
